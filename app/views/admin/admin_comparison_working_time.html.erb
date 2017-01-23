@@ -1,4 +1,6 @@
 <%= notice %>
+<h3><< メンバーの勤務時間一覧 >></h3>
+<br>
 <% temp_id ="empty"%>
 <% @graphs.each_with_index do |graph, i| %>
 <% unless temp_id == graph.options[:user][:id] %>
