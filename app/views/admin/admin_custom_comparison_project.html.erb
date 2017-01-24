@@ -1,6 +1,8 @@
+<h3><< メンバーの工数割合一覧 >></h3>
 <% temp_id ="empty"%>
 <% @graphs.each_with_index do |graph, i| %>
 <% unless temp_id == graph.options[:user][:id] %>
+<br>
 <p><%= image_tag(graph.options[:user][:picture]) %></p>
 <p>ユーザー：<%= graph.options[:user][:name] %></p>
 <% end %>

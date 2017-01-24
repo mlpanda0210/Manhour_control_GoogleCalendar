@@ -1,4 +1,6 @@
 <%= notice %>
+<h3><< メンバーの勤務時間一覧 >></h3>
+<br>
 <% temp_id ="empty"%>
 <% @graphs.each_with_index do |graph, i| %>
 <% unless temp_id == graph.options[:user][:id] %>
@@ -9,4 +11,6 @@
 <% temp_id = graph.options[:user][:id] %>
 
 <%= link_to high_chart(graph.options[:subtitle], graph) ,admin_admin_comparison_project_path(graph: graph.options[:title][:text]) %>
+<br>
+<br>
 <% end %>
